@@ -1,0 +1,16 @@
+{
+  "scriptFile" : "../b-1.jar",
+  "entryPoint" : "Function.Function.update",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "name" : "updatefuncionariorest",
+    "direction" : "in",
+    "route" : "funcionario",
+    "authLevel" : "anonymous",
+    "methods" : [ "PUT" ]
+  }, {
+    "type" : "http",
+    "name" : "$return",
+    "direction" : "out"
+  } ]
+}
